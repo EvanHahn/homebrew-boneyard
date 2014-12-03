@@ -9,7 +9,5 @@ cask :v1 => 'obsidian-menu-bar' do
   installer :manual => 'Obsidian Menu Bar/Install Obsidian Menu Bar.app'
   # uninstall :script => 'Obsidian Menu Bar/Restore Default Menu Bar.app/Resources/Scripts/main.scpt'
 
-  caveats do
-    os_version_only '10.9'
-  end
+  depends_on :macos => '10.9'
 end
